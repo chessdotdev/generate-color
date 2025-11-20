@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: #ffff;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;  
+}
+#color-name{
+    font-size: 1.4rem;
+    font-weight: bold
+}
+#generate-color{
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: solid 1px rgb(63, 62, 62);
+    background-color: rgb(105, 212, 105);
+    transition: transform 0.3s ease;
+}
+#generate-color:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
