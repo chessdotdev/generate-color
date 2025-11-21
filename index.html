@@ -11,9 +11,17 @@
 <body>
 
     <div id="container">
-        <span id="color-name">Color Name: #ffff</span>
+        <span id="color-name">Color Name: <input type="text" id="myText" value="#ffff" style="width: 250px;" disabled>
+            <button onclick="copyText()">Copy</button>
+
+           </span>
         <button id="generate-color">Generate</button>
+      
+        <p id="status"></p>
     </div>
+
+
+    
     <script src="assets/js/index.js"></script>
 </body>
 </html>
