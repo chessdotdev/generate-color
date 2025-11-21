@@ -13,13 +13,12 @@ function generateColor(){
      for(let i = 0; i < 6; i++){
       text.value +=colorData[Math.floor(Math.random()* colorDataLength)]
      }
-     return color;
+     return text.value;
 }
 
  generateButton.addEventListener('click', ()=>{
     let newColor = generateColor();
     document.body.style.backgroundColor = newColor;
-    colorName.textContent = `Color Name: ${newColor}`;
  })
 
 
