@@ -1,5 +1,5 @@
-/* :root {
-    --bg-color: #1a1a2e;
+:root {
+    --bg-color: #343453;
     --card-bg: rgba(255, 255, 255, 0.1);
     --text-primary: #ffffff;
     --text-secondary: #cccccc;
@@ -7,14 +7,18 @@
     --accent-hover: #a29bfe;
     --border-radius: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
 
 body{
     margin: 0;
-    background-color: #ffff;
+    /* background-color: #ffff; */
+    background-color: var(--bg-color);
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #container{
     display: flex;
@@ -23,6 +27,12 @@ body{
     flex-direction: column;
     height: 100vh;
     gap: 30px;  
+    max-width: 720px;
+    border: 1px solid var(--card-bg);
+    height: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
 }
 #color-name{
     font-size: 1.4rem;
@@ -38,4 +48,19 @@ body{
 #generate-color:hover{
 cursor: pointer;
 transform: scale(1.1);
+}
+#myText{
+    padding: 5px 30px;
+    max-width: 80px;
+    border-radius: 8px;
+    border: solid 1px var(--card-bg);
+    color: black;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+#container button{
+   margin: auto;
+}
+
 }
