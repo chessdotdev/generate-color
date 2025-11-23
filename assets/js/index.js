@@ -1,11 +1,7 @@
-// let number = Math.random() * 255;
-// let index = Math.round(number);
-// console.log(number)
-// console.log(color)
+
 let colorName = document.getElementById('color-name');
 const generateButton= document.getElementById('generate-color');
 let text = document.getElementById("myText");
-// text.value = "13asdas12";
 function generateColor(){
      text.value = '#';
     const colorData = ['A','B','C','D','E','F',1,2,3,4,5,6,7,8,9];
